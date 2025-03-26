@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwvhjly388ahk"]
+
+[ext_resource type="Script" uid="uid://0ybm8x7qf50n" path="res://Scenes/region_area.gd" id="1_k000m"]
+
+[node name="RegionArea" type="Area2D"]
+script = ExtResource("1_k000m")
+
+[connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

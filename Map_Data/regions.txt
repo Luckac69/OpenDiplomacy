@@ -40,6 +40,14 @@
 	"#994e8f" : "Syria",
 	"#99ab1e" : "Armenia",
 
+	"#3f9540" : "Moscow",
+	"#7dcd7d" : "St. Petersburg",
+	"#3f5640" : "Sevastopol",
+	"#f05faa" : "Warsaw",
+	"#6db0ab" : "Ukraine",
+	"#9db75b" : "Livonia",
+	"#bed8cd" : "Finland",
+
 	"#3c0d15" : "Norway",
 	"#782336" : "Denmark",
 	"#6184ae" : "Sweden",
