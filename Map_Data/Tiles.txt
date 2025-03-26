@@ -1,0 +1,67 @@
+{
+	"#cba69d" : "London",
+	"#ab4456" : "Liverpool",
+	"#3c5b9f" : "Edinburgh",
+	"#f083aa" : "Yorkshire",
+	"#458b6d" : "Wales",
+	"#3c4456" : "Clyde",
+	
+	"#1850ae" : "Paris",
+	"#6d6183" : "Brest",
+	"#182cae" : "Marseilles",
+	"#892b59" : "Burgandy",
+	"#723366" : "Gascony",
+	"#452f81" : "Normandy",
+	
+	"#726672" : "Berlin",
+	"#7266b6" : "Munich",
+	"#a06672" : "Kiel",
+	"#72884b" : "Rhur",
+	"#9c9da2" : "Silesia",
+	"#406672" : "Prussia",
+
+	"#339737" : "Rome",
+	"#784b8c" : "Naples",
+	"#33977e" : "Venice",
+	"#75a47c" : "Piedmont",
+	"#779d37" : "Tuscany",
+	"#55475f" : "Apullia",
+
+	"#c4b0b0" : "Vienna",
+	"#c4837e" : "Budapest",
+	"#c4b0cc" : "Treiste",
+	"#c4d0b0" : "Tyrolia",
+	"#84b0b0" : "Bohemia",
+	"#c495b0" : "Galicia",
+
+	"#c83142" : "Constantinople",
+	"#e8254b" : "Smyrna",
+	"#e84d4b" : "Ankara",
+	"#994e8f" : "Syria",
+	"#99ab1e" : "Armenia",
+
+	"#3c0d15" : "Norway",
+	"#782336" : "Denmark",
+	"#6184ae" : "Sweden",
+	
+	"#ee8e50" : "Holland",
+	"#4a4a0e" : "Belgium",
+
+	"#dbdb55" : "Spain",
+	"#45b79d" : "Portugal",
+
+	"#dbb95b" : "Romania",
+	"#3c489a" : "Serbia",
+	"#559973" : "Bulgaria",
+	"#18a6ae" : "Greece",
+	"#a62533" : "Albania",
+
+	"#336937" : "Tunisia",
+	"#951ac7" : "North Africa",
+
+
+	"#003400" : "Ireland",
+	"#1a4245" : "Siberia",
+	"#1a2900" : "Kazan",
+	"#4d4800" : "Persia"
+}
