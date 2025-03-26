@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://pawm6ynmubj1"]
+
+[ext_resource type="Shader" uid="uid://cfwmuxunbfow0" path="res://Shaders/army.gdshader" id="1_f1tu6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yjw0f"]
+shader = ExtResource("1_f1tu6")
+shader_parameter/fill_amount = 0.5
+shader_parameter/mask_rotation = 0.0
+shader_parameter/mask_offset = Vector2(-0.5, -0.5)
+shader_parameter/mask_size = Vector2(1, 1)
+shader_parameter/mask_rotation_pivot = Vector2(0.5, 0.5)
+shader_parameter/mask_scale_pivot = Vector2(0.5, 0.5)
+shader_parameter/invert_mask = true
+shader_parameter/use_different_texture = true
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8omp6"]
+load_path = "res://.godot/imported/BritishFlag.png-3d72d2f3d450c9779b8e02828845baea.ctex"
+
+[node name="Army" type="Node2D"]
+material = SubResource("ShaderMaterial_yjw0f")
+
+[node name="Britian" type="Sprite2D" parent="."]
+use_parent_material = true
+scale = Vector2(1, 1.681)
+texture = SubResource("CompressedTexture2D_8omp6")

@@ -71,5 +71,30 @@
 	"#003400" : "Ireland",
 	"#1a4245" : "Siberia",
 	"#1a2900" : "Kazan",
-	"#4d4800" : "Persia"
+	"#4d4800" : "Persia",
+
+
+	"#1e26ae" : "Barents Sea",
+	"#1e3cae" : "Norwegian Sea",
+	"#2c74a8" : "Gulf of Bothnia",
+	"#322f82" : "Baltic Sea",
+	"#1e6eae" : "Skaggerak",
+	"#59737d" : "Helgoland Bight",
+	"#1e91ae" : "North Sea",
+	"#51737d" : "English Channel",
+	"#5173ae" : "Irish Sea",
+	"#1e5fae" : "North Atlantic Ocean",
+	"#1e7eae" : "Mid Atlantic Ocean",
+
+	"#1b3ee2" : "Black Sea",
+	"#676f95" : "Aegean Sea",
+	"#6d5978" : "Eastern Mediterranean",
+	"#14448c" : "Ionian Sea",
+	"#69b0ae" : "Adriatic Sea",
+	"#1b7b91" : "Tyrrhenian Sea",
+	"#1b3ee2" : "Gulf of Lyon",
+	"#1b86e2" : "Western Mediterranean",
+
+	"#1bc0e2" : "Caspian Sea"
+
 }

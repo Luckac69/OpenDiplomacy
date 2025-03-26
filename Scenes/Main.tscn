@@ -14,4 +14,5 @@ centered = false
 [node name="Regions" type="Node2D" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(799, 609)
 script = ExtResource("3_kln2b")

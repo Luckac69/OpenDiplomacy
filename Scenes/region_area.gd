@@ -9,7 +9,6 @@ func _on_child_entered_tree(node:Node) -> void:
 		node.color = Color(0,0,0,0)
 
 func _on_mouse_entered() -> void:
-	print(region_name)
 	for node in get_children():
 		if node.is_class("Polygon2D"):
 			node.color = Color(1,1,1,.5)
@@ -23,4 +22,4 @@ func _on_mouse_exited() -> void:
 
 func _on_input_event(viewport:Node, event:InputEvent, shape_idx:int) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
-		print(str(region_name) + " Clicked")
+		pass
