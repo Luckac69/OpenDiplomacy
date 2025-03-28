@@ -1,7 +1,13 @@
 extends Area2D
 
-var region_name = ""
+var region_name : String
+var armyPlacement : Vector2
+var center : Vector2
 
+
+
+
+	
 
 
 func _on_child_entered_tree(node:Node) -> void:
@@ -12,6 +18,7 @@ func _on_mouse_entered() -> void:
 	for node in get_children():
 		if node.is_class("Polygon2D"):
 			node.color = Color(1,1,1,.5)
+	print(region_name + "\t" + str(center))
 
 func _on_mouse_exited() -> void:
 	for node in get_children():

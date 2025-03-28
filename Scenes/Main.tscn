@@ -1,13 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://jfvvbaytfm3"]
+[gd_scene load_steps=5 format=3 uid="uid://jfvvbaytfm3"]
 
 [ext_resource type="Script" uid="uid://d1ivpixy40q2p" path="res://Scenes/Main.gd" id="1_r150o"]
 [ext_resource type="Texture2D" uid="uid://pkdropcubys2" path="res://Map_Data/StandardMap.png" id="2_idj7w"]
 [ext_resource type="Script" uid="uid://bmjpwfnd70go4" path="res://Scenes/camera_2d.gd" id="3_kln2b"]
+[ext_resource type="Texture2D" uid="uid://cikliyfsslsr8" path="res://Map_Data/ArmyPlacemennt.png" id="4_rgh2o"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_r150o")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="RegionsImage" type="Sprite2D" parent="."]
 texture = ExtResource("2_idj7w")
 centered = false
 
@@ -16,3 +17,7 @@ centered = false
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(799, 609)
 script = ExtResource("3_kln2b")
+
+[node name="ArmyPlacementImage" type="Sprite2D" parent="."]
+texture = ExtResource("4_rgh2o")
+centered = false
