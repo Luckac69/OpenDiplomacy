@@ -14,7 +14,6 @@ shader_parameter/invert_mask = true
 shader_parameter/use_different_texture = true
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8omp6"]
-load_path = "res://.godot/imported/BritishFlag.png-3d72d2f3d450c9779b8e02828845baea.ctex"
 
 [node name="Army" type="Node2D"]
 material = SubResource("ShaderMaterial_yjw0f")

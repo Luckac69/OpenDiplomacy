@@ -3,10 +3,13 @@ extends Area2D
 var region_name : String
 var armyPlacement : Vector2
 var center : Vector2
+var lable
 
 
 
-
+func onready():
+	lable.position = center
+	pass
 	
 
 

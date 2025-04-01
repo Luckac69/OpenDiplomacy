@@ -1,11 +1,6 @@
 res://Scenes/Main.tscn
-res://Scenes/region_area.tscn
-res://Scenes/region_area.gd
-res://Map_Data/regions.txt
-res://Scenes/Main.gd
-res://Scenes/camera_2d.gd
-res://Shaders/unit.gdshader
-res://Scenes/unit.tscn
-res://Shaders/Army.gdshader
 res://Shaders/army.gdshader
+res://Scenes/region_area.tscn
 res://Scenes/army.tscn
+res://Scenes/Main.gd
+res://Scenes/region_area.gd
