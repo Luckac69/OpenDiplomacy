@@ -3,6 +3,9 @@ extends Area2D
 var region_name : String
 var armyPlacement : Vector2
 var center : Vector2
+var boundingBox : Vector4
+
+##Lable
 var lable
 
 
@@ -21,7 +24,7 @@ func _on_mouse_entered() -> void:
 	for node in get_children():
 		if node.is_class("Polygon2D"):
 			node.color = Color(1,1,1,.5)
-	print(region_name + "\t" + str(center))
+	print(region_name + "\t" + str(boundingBox))
 
 func _on_mouse_exited() -> void:
 	for node in get_children():

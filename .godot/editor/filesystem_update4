@@ -3,3 +3,4 @@ res://Scenes/Main.tscn
 res://Shaders/army.gdshader
 res://Scenes/region_area.tscn
 res://Scenes/army.tscn
+res://Scenes/region_area.gd

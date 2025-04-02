@@ -40,6 +40,10 @@ func load_regions():
 
 		region.center = _getPolygonCenter(polygons);
 
+		var boundingBox = _calcBoundingBox(polygons)
+		region.boundingBox = boundingBox
+
+		
 		var region_name = Label.new()
 		region_name.text = region.region_name
 		region_name.vertical_alignment = VERTICAL_ALIGNMENT_FILL
@@ -74,10 +78,12 @@ func _getPolygonCenter(polygons: Array) -> Vector2:
 	var center : Vector2 = Vector2.ZERO
 	var numPoints : int = 0
 	
+
 	for polygon in polygons:
-		for vertext in polygon:
-			center += vertext
+		for vertex in polygon:
+			center += vertex
 			numPoints += 1 
+
 
 	return center / numPoints
 
@@ -85,7 +91,23 @@ func _getPolygonCenter(polygons: Array) -> Vector2:
 
 func _calcBoundingBox(polygons: Array) -> Vector4:
 	var boundingBox : Vector4
-
+	
+	var maxX : int = polygons[0][0].x
+	var maxY : int = polygons[0][0].y
+	var minX : int = polygons[0][0].x
+	var minY : int = polygons[0][0].y
+	for polygon in polygons:
+		for vertex in polygon:
+			if vertex.x > maxX:
+				maxX = vertex.x
+			if vertex.y > maxY:
+				maxX = vertex.y
+			if vertex.x < minX:
+				minX = vertex.x
+			if vertex.y < minY:
+				minY = vertex.y
+	
+	boundingBox = Vector4(maxX,maxY,minX,minY)
 	return boundingBox
 
 
