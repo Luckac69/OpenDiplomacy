@@ -38,16 +38,15 @@ func load_regions():
 		var bitmap = get_bitmap(image, region_color, pixel_color_dict)
 		var polygons = bitmap.opaque_to_polygons(Rect2(Vector2(0,0), bitmap.get_size()), 0.1)
 
-		region.center = _getPolygonCenter(polygons);
-
 		var boundingBox = _calcBoundingBox(polygons)
 		region.boundingBox = boundingBox
 
+		region.center = _getPolygonCenter(polygons, boundingBox);
 		
 		var region_name = Label.new()
 		region_name.text = region.region_name
-		#move name to the left a little, since text goes to the 
 		region_name.position = region.center
+		#move name to the left a little, since text goes to the right
 		region_name.position.x -= region_name.text.length() * 5 
 
 		region_name.anchor_bottom = true
@@ -72,19 +71,21 @@ func load_regions():
 
 			
 #######GETTING THE CENTER OF THE POLYGON#################
-func _getPolygonCenter(polygons: Array) -> Vector2:
-	var center : Vector2 = Vector2.ZERO
-	var numPoints : int = 0
-	
+func _getPolygonCenter(polygons: Array, boundingBox: Vector4) -> Vector2:
+	var center : Vector2 = Vector2(boundingBox.z, boundingBox.y) 
 
-	for polygon in polygons:
-		for vertex in polygon:
-			center += vertex
-			numPoints += 1 
+	var min : int = _signedDistanceFunction()
+	for x in range(boundingBox.w, boundingBox.y):
+		for y in range(boundingBox.x, boundingBox.z):
+			var current : int = _signedDistanceFunction()
+			if current < min:
+				center = Vector2(x,y)
 
 
-	return center / numPoints
+	return center
 
+func _signedDistanceFunction() -> int:
+	return 1
 
 func _calcBoundingBox(polygons: Array) -> Vector4:
 	var boundingBox : Vector4
