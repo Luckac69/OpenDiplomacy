@@ -53,23 +53,21 @@ func load_regions():
 		region_name.anchor_bottom = true
 		region.add_child(region_name)
 
-		for polygon in polygons:
-			var region_collision = CollisionPolygon2D.new()
-			var region_polygon = Polygon2D.new()
-			region_collision.polygon = polygon
-			region_polygon.polygon = polygon
 
+		for polygon in polygons:
+
+			var region_collision = CollisionPolygon2D.new()
+			region_collision.polygon = polygon
+			region.add_child(region_collision)
+
+			var region_polygon = Polygon2D.new()
+			region_polygon.polygon = polygon
+			region.add_child(region_polygon)
 
 			var region_line = Line2D.new()
 			region_line.points = polygon
 			region_line.width = 5
 			region_line.default_color = boarder_color
-
-
-
-
-			region.add_child(region_collision)
-			region.add_child(region_polygon)
 			region.add_child(region_line)
 
 			
@@ -86,7 +84,6 @@ func _getPolygonCenter(polygons: Array) -> Vector2:
 
 
 	return center / numPoints
-
 
 
 func _calcBoundingBox(polygons: Array) -> Vector4:
@@ -111,6 +108,7 @@ func _calcBoundingBox(polygons: Array) -> Vector4:
 	return boundingBox
 
 
+###############CENTER OF POLYGON CODE END##############
 
 
 func get_pixel_color_dict(image):
