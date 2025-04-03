@@ -46,10 +46,10 @@ func load_regions():
 		
 		var region_name = Label.new()
 		region_name.text = region.region_name
-		region_name.vertical_alignment = VERTICAL_ALIGNMENT_FILL
-		region_name.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
-		region.center.x -= region_name.text.length() * 5 #move name to the left a little, since text goes to the right
+		#move name to the left a little, since text goes to the 
 		region_name.position = region.center
+		region_name.position.x -= region_name.text.length() * 5 
+
 		region_name.anchor_bottom = true
 		region.add_child(region_name)
 
